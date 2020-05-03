@@ -1,0 +1,791 @@
+﻿<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProjectGuid>{1357885A-4064-4602-9D64-DA0919F862D2}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <NoStandardLibraries>false</NoStandardLibraries>
+    <AssemblyName>ConsoleApplication</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace>RentalSystem</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="add product.aspx" />
+    <Content Include="admin forgot1.aspx" />
+    <Content Include="adminenquiry1.aspx" />
+    <Content Include="adminfeedback1.aspx" />
+    <Content Include="adminhome1.aspx" />
+    <Content Include="adminlogin1.aspx" />
+    <Content Include="AirConditioners\air condition1.aspx" />
+    <Content Include="AirConditioners\air condition2.aspx" />
+    <Content Include="AirConditioners\air condition3.aspx" />
+    <Content Include="AirConditioners\air condition4.aspx" />
+    <Content Include="AirConditioners\air condition5.aspx" />
+    <Content Include="AirConditioners\air condition6.aspx" />
+    <Content Include="AirConditioners\air condition7.aspx" />
+    <Content Include="AirConditioners\air condition8.aspx" />
+    <Content Include="AirConditioners\air conditioner products.aspx" />
+    <Content Include="AirConditioners\booking.aspx" />
+    <Content Include="AirConditioners\failbooking.aspx" />
+    <Content Include="AirConditioners\informbooking.aspx" />
+    <Content Include="AirConditioners\searchresults.aspx" />
+    <Content Include="AirConditioners\viewairconditioners1.aspx" />
+    <Content Include="Audio Visuals\audio visual1.aspx" />
+    <Content Include="Audio Visuals\audio visual2.aspx" />
+    <Content Include="Audio Visuals\audio visual3.aspx" />
+    <Content Include="Audio Visuals\audio visual4.aspx" />
+    <Content Include="Audio Visuals\audio visual5.aspx" />
+    <Content Include="Audio Visuals\audio visual6.aspx" />
+    <Content Include="Audio Visuals\audio visual7.aspx" />
+    <Content Include="Audio Visuals\audio visual8.aspx" />
+    <Content Include="Audio Visuals\audioProducts1.aspx" />
+    <Content Include="Audio Visuals\booking.aspx" />
+    <Content Include="Audio Visuals\failbooking.aspx" />
+    <Content Include="Audio Visuals\informbooking.aspx" />
+    <Content Include="Audio Visuals\searchresults.aspx" />
+    <Content Include="Audio Visuals\viewaudiovisuals1.aspx" />
+    <Content Include="booking.aspx" />
+    <Content Include="Cars\booking.aspx" />
+    <Content Include="Cars\car products1.aspx" />
+    <Content Include="Cars\car1.aspx" />
+    <Content Include="Cars\car2.aspx" />
+    <Content Include="Cars\car3.aspx" />
+    <Content Include="Cars\car4.aspx" />
+    <Content Include="Cars\car5.aspx" />
+    <Content Include="Cars\car6.aspx" />
+    <Content Include="Cars\car7.aspx" />
+    <Content Include="Cars\car8.aspx" />
+    <Content Include="Cars\failbooking.aspx" />
+    <Content Include="Cars\informbooking.aspx" />
+    <Content Include="Cars\searchresults.aspx" />
+    <Content Include="Cars\viewcars.aspx" />
+    <Content Include="changepassword.aspx" />
+    <Content Include="Computers\booking.aspx" />
+    <Content Include="Computers\computer products1.aspx" />
+    <Content Include="Computers\computer1.aspx" />
+    <Content Include="Computers\computer2.aspx" />
+    <Content Include="Computers\computer3.aspx" />
+    <Content Include="Computers\computer4.aspx" />
+    <Content Include="Computers\computer5.aspx" />
+    <Content Include="Computers\computer6.aspx" />
+    <Content Include="Computers\computer7.aspx" />
+    <Content Include="Computers\computer8.aspx" />
+    <Content Include="Computers\failbooking.aspx" />
+    <Content Include="Computers\informbooking.aspx" />
+    <Content Include="Computers\searchresults.aspx" />
+    <Content Include="Computers\viewcomputers1.aspx" />
+    <Content Include="Default.aspx" />
+    <Content Include="deleteproduct.aspx" />
+    <Content Include="enquiry.aspx" />
+    <Content Include="failbooking.aspx" />
+    <Content Include="failregister.aspx" />
+    <Content Include="feedback.aspx" />
+    <Content Include="feedbacksubmit.aspx" />
+    <Content Include="forgotpassword.aspx" />
+    <Content Include="Furniture\booking.aspx" />
+    <Content Include="Furniture\failbooking.aspx" />
+    <Content Include="Furniture\furniture products1.aspx" />
+    <Content Include="Furniture\furniture1.aspx" />
+    <Content Include="Furniture\furniture2.aspx" />
+    <Content Include="Furniture\furniture3.aspx" />
+    <Content Include="Furniture\furniture4.aspx" />
+    <Content Include="Furniture\furniture5.aspx" />
+    <Content Include="Furniture\furniture6.aspx" />
+    <Content Include="Furniture\furniture7.aspx" />
+    <Content Include="Furniture\furniture8.aspx" />
+    <Content Include="Furniture\informbooking.aspx" />
+    <Content Include="Furniture\searchresults.aspx" />
+    <Content Include="Furniture\viewfurniture1.aspx" />
+    <Content Include="HomeAppliances\booking.aspx" />
+    <Content Include="HomeAppliances\failbooking.aspx" />
+    <Content Include="HomeAppliances\home appli1.aspx" />
+    <Content Include="HomeAppliances\home appli2.aspx" />
+    <Content Include="HomeAppliances\home appli3.aspx" />
+    <Content Include="HomeAppliances\home appli4.aspx" />
+    <Content Include="HomeAppliances\home appli5.aspx" />
+    <Content Include="HomeAppliances\home appli6.aspx" />
+    <Content Include="HomeAppliances\home appli7.aspx" />
+    <Content Include="HomeAppliances\home appli8.aspx" />
+    <Content Include="HomeAppliances\house hold products1.aspx" />
+    <Content Include="HomeAppliances\informbooking.aspx" />
+    <Content Include="HomeAppliances\searchresults.aspx" />
+    <Content Include="HomeAppliances\viewhomeappliances1.aspx" />
+    <Content Include="images\408730409ohp.jpg" />
+    <Content Include="images\408730465faxplain.jpg" />
+    <Content Include="images\7741990photocopier.gif" />
+    <Content Include="images\a15.jpg" />
+    <Content Include="images\a16.jpg" />
+    <Content Include="images\a6.jpg" />
+    <Content Include="images\a6_1.gif" />
+    <Content Include="images\accent.jpg" />
+    <Content Include="images\ahemdabad.jpg" />
+    <Content Include="images\ahmedabad rentals.JPG" />
+    <Content Include="images\air-conditioners.gif" />
+    <Content Include="images\already_member.gif" />
+    <Content Include="images\audio-visuals.gif" />
+    <Content Include="images\auto slide projec.jpg" />
+    <Content Include="images\backnew.JPG" />
+    <Content Include="images\backnew1.JPG" />
+    <Content Include="images\backnew123.jpg" />
+    <Content Include="images\Bangalore rentals.jpg" />
+    <Content Include="images\banglore.jpg" />
+    <Content Include="images\calcutta.jpg" />
+    <Content Include="images\cars2.gif" />
+    <Content Include="images\Chennai rentals.jpg" />
+    <Content Include="images\chennai.jpg" />
+    <Content Include="images\computers.gif" />
+    <Content Include="images\Conference table.jpg" />
+    <Content Include="images\delhi rental showrm.jpg" />
+    <Content Include="images\delhi.jpg" />
+    <Content Include="images\DesktopComputer.gif" />
+    <Content Include="images\dinning table.jpg" />
+    <Content Include="images\Double bed.jpg" />
+    <Content Include="images\furniture1.gif" />
+    <Content Include="images\fw_c.gif" />
+    <Content Include="images\Home-appliances.gif" />
+    <Content Include="images\HYD.JPG" />
+    <Content Include="images\hyderabad.jpg" />
+    <Content Include="images\Hyundai Accent-Luxury AC.jpg" />
+    <Content Include="images\images.jpg" />
+    <Content Include="images\Inkjet Printer.gif" />
+    <Content Include="images\kolkata rentals.JPG" />
+    <Content Include="images\ktt_cal.gif" />
+    <Content Include="images\lancer.gif" />
+    <Content Include="images\Laptop.jpg" />
+    <Content Include="images\Laser Printer.gif" />
+    <Content Include="images\Maruthi Esteem-Medium AC.gif" />
+    <Content Include="images\microwave oven.jpg" />
+    <Content Include="images\Mitsibushi Lancer-Luxury AC.gif" />
+    <Content Include="images\mumbai rentals.GIF" />
+    <Content Include="images\mumbai.jpg" />
+    <Content Include="images\office-equip1.gif" />
+    <Content Include="images\party-rentals.gif" />
+    <Content Include="images\pune rentals.JPG" />
+    <Content Include="images\pune.jpg" />
+    <Content Include="images\refrigerator.jpg" />
+    <Content Include="images\relocation.gif" />
+    <Content Include="images\rent.jpg" />
+    <Content Include="images\sanyo sharp.jpg" />
+    <Content Include="images\searchNow_btn.gif" />
+    <Content Include="images\sofa set.jpg" />
+    <Content Include="images\Split Air Conditioner.jpg" />
+    <Content Include="images\Split AirConditioner.jpg" />
+    <Content Include="images\Tata Indica-Economy non AC.gif" />
+    <Content Include="images\television.jpg" />
+    <Content Include="images\Thermal paper fax.jpg" />
+    <Content Include="images\tick.gif" />
+    <Content Include="images\Touch Screen.jpg" />
+    <Content Include="images\video cd player.jpg" />
+    <Content Include="images\washing machine.jpg" />
+    <Content Include="images\Window AirConditioner.gif" />
+    <Content Include="informbooking.aspx" />
+    <Content Include="informenq.aspx" />
+    <Content Include="myaccount.aspx" />
+    <Content Include="Office Equip\booking.aspx" />
+    <Content Include="Office Equip\failbooking.aspx" />
+    <Content Include="Office Equip\informbooking.aspx" />
+    <Content Include="Office Equip\office equip products1.aspx" />
+    <Content Include="Office Equip\office equip1.aspx" />
+    <Content Include="Office Equip\office equip2.aspx" />
+    <Content Include="Office Equip\office equip3.aspx" />
+    <Content Include="Office Equip\office equip4.aspx" />
+    <Content Include="Office Equip\office equip5.aspx" />
+    <Content Include="Office Equip\office equip6.aspx" />
+    <Content Include="Office Equip\office equip7.aspx" />
+    <Content Include="Office Equip\office equip8.aspx" />
+    <Content Include="Office Equip\searchresults.aspx" />
+    <Content Include="Office Equip\viewofficeequipment1.aspx" />
+    <Content Include="PartyREntals\Party rental form1.aspx" />
+    <Content Include="PartyREntals\party Rentals1.aspx" />
+    <Content Include="PartyREntals\party Rentals2.aspx" />
+    <Content Include="PartyREntals\party Rentals3.aspx" />
+    <Content Include="PartyREntals\party Rentals4.aspx" />
+    <Content Include="PartyREntals\party Rentals5.aspx" />
+    <Content Include="PartyREntals\party Rentals6.aspx" />
+    <Content Include="PartyREntals\party Rentals7.aspx" />
+    <Content Include="PartyREntals\party Rentals8.aspx" />
+    <Content Include="PartyREntals\searchresults.aspx" />
+    <Content Include="PartyREntals\successpost.aspx" />
+    <Content Include="passwordChanged.aspx" />
+    <Content Include="Relocation\relocation form1.aspx" />
+    <Content Include="Relocation\relocation1.aspx" />
+    <Content Include="Relocation\relocation2.aspx" />
+    <Content Include="Relocation\relocation3.aspx" />
+    <Content Include="Relocation\relocation4.aspx" />
+    <Content Include="Relocation\relocation5.aspx" />
+    <Content Include="Relocation\relocation6.aspx" />
+    <Content Include="Relocation\relocation7.aspx" />
+    <Content Include="Relocation\relocation8.aspx" />
+    <Content Include="Relocation\searchresults.aspx" />
+    <Content Include="Relocation\successpost.aspx" />
+    <Content Include="searchresults.aspx" />
+    <Content Include="select city\select city1.aspx" />
+    <Content Include="select city\select city2.aspx" />
+    <Content Include="select city\select city3.aspx" />
+    <Content Include="select city\select city4.aspx" />
+    <Content Include="select city\select city5.aspx" />
+    <Content Include="select city\select city6.aspx" />
+    <Content Include="select city\select city7.aspx" />
+    <Content Include="select city\select city8.aspx" />
+    <Content Include="select city\select city9.aspx" />
+    <Content Include="signup.aspx" />
+    <Content Include="successfullunregister.aspx" />
+    <Content Include="successregister.aspx" />
+    <Content Include="successupdate.aspx" />
+    <Content Include="unregister.aspx" />
+    <Content Include="update product.aspx" />
+    <Content Include="vendor.aspx" />
+    <Content Include="viewprofile.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="add product.aspx.cs">
+      <DependentUpon>add product.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin forgot1.aspx.cs">
+      <DependentUpon>admin forgot1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin.master.cs">
+      <DependentUpon>admin.master</DependentUpon>
+    </Compile>
+    <Compile Include="adminenquiry1.aspx.cs">
+      <DependentUpon>adminenquiry1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="adminfeedback1.aspx.cs">
+      <DependentUpon>adminfeedback1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="adminhome1.aspx.cs">
+      <DependentUpon>adminhome1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="adminlogin1.aspx.cs">
+      <DependentUpon>adminlogin1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AirConditioners\air condition1.aspx.cs">
+      <DependentUpon>air condition1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AirConditioners\air condition2.aspx.cs">
+      <DependentUpon>air condition2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AirConditioners\air condition3.aspx.cs">
+      <DependentUpon>air condition3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AirConditioners\air condition4.aspx.cs">
+      <DependentUpon>air condition4.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AirConditioners\air condition5.aspx.cs">
+      <DependentUpon>air condition5.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AirConditioners\air condition6.aspx.cs">
+      <DependentUpon>air condition6.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AirConditioners\air condition7.aspx.cs">
+      <DependentUpon>air condition7.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AirConditioners\air condition8.aspx.cs">
+      <DependentUpon>air condition8.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AirConditioners\air conditioner products.aspx.cs">
+      <DependentUpon>air conditioner products.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AirConditioners\booking.aspx.cs">
+      <DependentUpon>booking.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AirConditioners\failbooking.aspx.cs">
+      <DependentUpon>failbooking.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AirConditioners\informbooking.aspx.cs">
+      <DependentUpon>informbooking.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AirConditioners\searchresults.aspx.cs">
+      <DependentUpon>searchresults.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AirConditioners\viewairconditioners1.aspx.cs">
+      <DependentUpon>viewairconditioners1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Audio Visuals\audio visual1.aspx.cs">
+      <DependentUpon>audio visual1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Audio Visuals\audio visual2.aspx.cs">
+      <DependentUpon>audio visual2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Audio Visuals\audio visual3.aspx.cs">
+      <DependentUpon>audio visual3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Audio Visuals\audio visual4.aspx.cs">
+      <DependentUpon>audio visual4.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Audio Visuals\audio visual5.aspx.cs">
+      <DependentUpon>audio visual5.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Audio Visuals\audio visual6.aspx.cs">
+      <DependentUpon>audio visual6.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Audio Visuals\audio visual7.aspx.cs">
+      <DependentUpon>audio visual7.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Audio Visuals\audio visual8.aspx.cs">
+      <DependentUpon>audio visual8.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Audio Visuals\audioProducts1.aspx.cs">
+      <DependentUpon>audioProducts1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Audio Visuals\AudioVisuval.master.cs">
+      <DependentUpon>AudioVisuval.master</DependentUpon>
+    </Compile>
+    <Compile Include="Audio Visuals\booking.aspx.cs">
+      <DependentUpon>booking.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Audio Visuals\failbooking.aspx.cs">
+      <DependentUpon>failbooking.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Audio Visuals\informbooking.aspx.cs">
+      <DependentUpon>informbooking.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Audio Visuals\searchresults.aspx.cs">
+      <DependentUpon>searchresults.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Audio Visuals\viewaudiovisuals1.aspx.cs">
+      <DependentUpon>viewaudiovisuals1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="booking.aspx.cs">
+      <DependentUpon>booking.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Cars\booking.aspx.cs">
+      <DependentUpon>booking.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Cars\car products1.aspx.cs">
+      <DependentUpon>car products1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Cars\car1.aspx.cs">
+      <DependentUpon>car1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Cars\car2.aspx.cs">
+      <DependentUpon>car2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Cars\car3.aspx.cs">
+      <DependentUpon>car3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Cars\car4.aspx.cs">
+      <DependentUpon>car4.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Cars\car5.aspx.cs">
+      <DependentUpon>car5.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Cars\car6.aspx.cs">
+      <DependentUpon>car6.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Cars\car7.aspx.cs">
+      <DependentUpon>car7.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Cars\car8.aspx.cs">
+      <DependentUpon>car8.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Cars\failbooking.aspx.cs">
+      <DependentUpon>failbooking.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Cars\informbooking.aspx.cs">
+      <DependentUpon>informbooking.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Cars\searchresults.aspx.cs">
+      <DependentUpon>searchresults.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Cars\viewcars.aspx.cs">
+      <DependentUpon>viewcars.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="changepassword.aspx.cs">
+      <DependentUpon>changepassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Computers\booking.aspx.cs">
+      <DependentUpon>booking.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Computers\computer products1.aspx.cs">
+      <DependentUpon>computer products1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Computers\computer1.aspx.cs">
+      <DependentUpon>computer1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Computers\computer2.aspx.cs">
+      <DependentUpon>computer2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Computers\computer3.aspx.cs">
+      <DependentUpon>computer3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Computers\computer4.aspx.cs">
+      <DependentUpon>computer4.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Computers\computer5.aspx.cs">
+      <DependentUpon>computer5.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Computers\computer6.aspx.cs">
+      <DependentUpon>computer6.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Computers\computer7.aspx.cs">
+      <DependentUpon>computer7.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Computers\computer8.aspx.cs">
+      <DependentUpon>computer8.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Computers\failbooking.aspx.cs">
+      <DependentUpon>failbooking.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Computers\informbooking.aspx.cs">
+      <DependentUpon>informbooking.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Computers\searchresults.aspx.cs">
+      <DependentUpon>searchresults.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Computers\viewcomputers1.aspx.cs">
+      <DependentUpon>viewcomputers1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="deleteproduct.aspx.cs">
+      <DependentUpon>deleteproduct.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="enquiry.aspx.cs">
+      <DependentUpon>enquiry.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="failbooking.aspx.cs">
+      <DependentUpon>failbooking.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="failregister.aspx.cs">
+      <DependentUpon>failregister.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="feedback.aspx.cs">
+      <DependentUpon>feedback.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="feedbacksubmit.aspx.cs">
+      <DependentUpon>feedbacksubmit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="forgotpassword.aspx.cs">
+      <DependentUpon>forgotpassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Furniture\booking.aspx.cs">
+      <DependentUpon>booking.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Furniture\failbooking.aspx.cs">
+      <DependentUpon>failbooking.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Furniture\furniture products1.aspx.cs">
+      <DependentUpon>furniture products1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Furniture\furniture1.aspx.cs">
+      <DependentUpon>furniture1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Furniture\furniture2.aspx.cs">
+      <DependentUpon>furniture2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Furniture\furniture3.aspx.cs">
+      <DependentUpon>furniture3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Furniture\furniture4.aspx.cs">
+      <DependentUpon>furniture4.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Furniture\furniture5.aspx.cs">
+      <DependentUpon>furniture5.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Furniture\furniture6.aspx.cs">
+      <DependentUpon>furniture6.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Furniture\furniture7.aspx.cs">
+      <DependentUpon>furniture7.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Furniture\furniture8.aspx.cs">
+      <DependentUpon>furniture8.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Furniture\informbooking.aspx.cs">
+      <DependentUpon>informbooking.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Furniture\searchresults.aspx.cs">
+      <DependentUpon>searchresults.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Furniture\viewfurniture1.aspx.cs">
+      <DependentUpon>viewfurniture1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HomeAppliances\booking.aspx.cs">
+      <DependentUpon>booking.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HomeAppliances\failbooking.aspx.cs">
+      <DependentUpon>failbooking.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HomeAppliances\home appli1.aspx.cs">
+      <DependentUpon>home appli1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HomeAppliances\home appli2.aspx.cs">
+      <DependentUpon>home appli2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HomeAppliances\home appli3.aspx.cs">
+      <DependentUpon>home appli3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HomeAppliances\home appli4.aspx.cs">
+      <DependentUpon>home appli4.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HomeAppliances\home appli5.aspx.cs">
+      <DependentUpon>home appli5.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HomeAppliances\home appli6.aspx.cs">
+      <DependentUpon>home appli6.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HomeAppliances\home appli7.aspx.cs">
+      <DependentUpon>home appli7.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HomeAppliances\home appli8.aspx.cs">
+      <DependentUpon>home appli8.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HomeAppliances\house hold products1.aspx.cs">
+      <DependentUpon>house hold products1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HomeAppliances\informbooking.aspx.cs">
+      <DependentUpon>informbooking.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HomeAppliances\searchresults.aspx.cs">
+      <DependentUpon>searchresults.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HomeAppliances\viewhomeappliances1.aspx.cs">
+      <DependentUpon>viewhomeappliances1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HomePage.master.cs">
+      <DependentUpon>HomePage.master</DependentUpon>
+    </Compile>
+    <Compile Include="informbooking.aspx.cs">
+      <DependentUpon>informbooking.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="informenq.aspx.cs">
+      <DependentUpon>informenq.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="myaccount.aspx.cs">
+      <DependentUpon>myaccount.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Office Equip\booking.aspx.cs">
+      <DependentUpon>booking.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Office Equip\failbooking.aspx.cs">
+      <DependentUpon>failbooking.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Office Equip\informbooking.aspx.cs">
+      <DependentUpon>informbooking.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Office Equip\office equip products1.aspx.cs">
+      <DependentUpon>office equip products1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Office Equip\office equip1.aspx.cs">
+      <DependentUpon>office equip1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Office Equip\office equip2.aspx.cs">
+      <DependentUpon>office equip2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Office Equip\office equip3.aspx.cs">
+      <DependentUpon>office equip3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Office Equip\office equip4.aspx.cs">
+      <DependentUpon>office equip4.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Office Equip\office equip5.aspx.cs">
+      <DependentUpon>office equip5.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Office Equip\office equip6.aspx.cs">
+      <DependentUpon>office equip6.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Office Equip\office equip7.aspx.cs">
+      <DependentUpon>office equip7.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Office Equip\office equip8.aspx.cs">
+      <DependentUpon>office equip8.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Office Equip\searchresults.aspx.cs">
+      <DependentUpon>searchresults.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Office Equip\viewofficeequipment1.aspx.cs">
+      <DependentUpon>viewofficeequipment1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PartyREntals\Party rental form1.aspx.cs">
+      <DependentUpon>Party rental form1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PartyREntals\party Rentals1.aspx.cs">
+      <DependentUpon>party Rentals1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PartyREntals\party Rentals2.aspx.cs">
+      <DependentUpon>party Rentals2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PartyREntals\party Rentals3.aspx.cs">
+      <DependentUpon>party Rentals3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PartyREntals\party Rentals4.aspx.cs">
+      <DependentUpon>party Rentals4.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PartyREntals\party Rentals5.aspx.cs">
+      <DependentUpon>party Rentals5.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PartyREntals\party Rentals6.aspx.cs">
+      <DependentUpon>party Rentals6.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PartyREntals\party Rentals7.aspx.cs">
+      <DependentUpon>party Rentals7.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PartyREntals\party Rentals8.aspx.cs">
+      <DependentUpon>party Rentals8.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PartyREntals\searchresults.aspx.cs">
+      <DependentUpon>searchresults.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PartyREntals\successpost.aspx.cs">
+      <DependentUpon>successpost.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="passwordChanged.aspx.cs">
+      <DependentUpon>passwordChanged.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Relocation\relocation form1.aspx.cs">
+      <DependentUpon>relocation form1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Relocation\relocation1.aspx.cs">
+      <DependentUpon>relocation1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Relocation\relocation2.aspx.cs">
+      <DependentUpon>relocation2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Relocation\relocation3.aspx.cs">
+      <DependentUpon>relocation3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Relocation\relocation4.aspx.cs">
+      <DependentUpon>relocation4.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Relocation\relocation5.aspx.cs">
+      <DependentUpon>relocation5.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Relocation\relocation6.aspx.cs">
+      <DependentUpon>relocation6.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Relocation\relocation7.aspx.cs">
+      <DependentUpon>relocation7.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Relocation\relocation8.aspx.cs">
+      <DependentUpon>relocation8.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Relocation\searchresults.aspx.cs">
+      <DependentUpon>searchresults.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Relocation\successpost.aspx.cs">
+      <DependentUpon>successpost.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="searchresults.aspx.cs">
+      <DependentUpon>searchresults.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="select city\select city1.aspx.cs">
+      <DependentUpon>select city1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="select city\select city2.aspx.cs">
+      <DependentUpon>select city2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="select city\select city3.aspx.cs">
+      <DependentUpon>select city3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="select city\select city4.aspx.cs">
+      <DependentUpon>select city4.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="select city\select city5.aspx.cs">
+      <DependentUpon>select city5.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="select city\select city6.aspx.cs">
+      <DependentUpon>select city6.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="select city\select city7.aspx.cs">
+      <DependentUpon>select city7.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="select city\select city8.aspx.cs">
+      <DependentUpon>select city8.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="select city\select city9.aspx.cs">
+      <DependentUpon>select city9.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="select city\SelectCityMaster.master.cs">
+      <DependentUpon>SelectCityMaster.master</DependentUpon>
+    </Compile>
+    <Compile Include="signup.aspx.cs">
+      <DependentUpon>signup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="successfullunregister.aspx.cs">
+      <DependentUpon>successfullunregister.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="successregister.aspx.cs">
+      <DependentUpon>successregister.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="successupdate.aspx.cs">
+      <DependentUpon>successupdate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="unregister.aspx.cs">
+      <DependentUpon>unregister.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="update product.aspx.cs">
+      <DependentUpon>update product.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="vendor.aspx.cs">
+      <DependentUpon>vendor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="viewprofile.aspx.cs">
+      <DependentUpon>viewprofile.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="admin.master" />
+    <None Include="AirConditioners\Handler.ashx" />
+    <None Include="AirConditioners\Handlerairconditioners.ashx" />
+    <None Include="Audio Visuals\AudioVisuval.master" />
+    <None Include="Audio Visuals\Handler.ashx" />
+    <None Include="Audio Visuals\Handleraudiovisuals.ashx" />
+    <None Include="Cars\Handler.ashx" />
+    <None Include="Cars\Handlerviewcars.ashx" />
+    <None Include="Computers\Handler.ashx" />
+    <None Include="Computers\Handlercomputers.ashx" />
+    <None Include="Furniture\Handler.ashx" />
+    <None Include="Furniture\Handlerviewfurniture.ashx" />
+    <None Include="Handler.ashx" />
+    <None Include="Handlerproducts.ashx" />
+    <None Include="HomeAppliances\Handler.ashx" />
+    <None Include="HomeAppliances\Handlerhomeappliances.ashx" />
+    <None Include="HomePage.master" />
+    <None Include="images\Thumbs.db" />
+    <None Include="Office Equip\Handler.ashx" />
+    <None Include="Office Equip\Handlerofficeequipments.ashx" />
+    <None Include="PartyREntals\Handler.ashx" />
+    <None Include="Relocation\Handler.ashx" />
+    <None Include="select city\SelectCityMaster.master" />
+    <None Include="Thumbs.db" />
+    <None Include="web.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSHARP.Targets" />
+  <ProjectExtensions>
+    <VisualStudio AllowExistingFolder="true" />
+  </ProjectExtensions>
+</Project>
